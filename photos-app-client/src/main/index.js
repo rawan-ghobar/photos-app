@@ -21,7 +21,7 @@ function createWindow() {
     mainWindow.show()
   })
 
-  mainWindow.isAlwaysOnTop(true, 'screen')
+  mainWindow.setAlwaysOnTop(true, 'screen');
 
   mainWindow.webContents.setWindowOpenHandler((details) => {
     shell.openExternal(details.url)

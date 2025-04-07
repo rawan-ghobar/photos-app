@@ -1,0 +1,65 @@
+.headbar{
+  margin:0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width:100vw;
+  height: 6vh;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #E6E6E6;
+}
+
+.headbar-menu{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.headbar-menu li{
+  position:relative;
+}
+
+.headbar-menu button.active {
+  background: none;
+  border: none;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #549790;
+  padding: 1rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.headbar-menu button.active::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #549790;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  z-index: 1002;
+}
+
+.headbar-menu button.inactive {
+  background: none;
+  border: none;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #2E344D;
+  padding: 1rem;
+  cursor: pointer;
+  position: relative;
+}
+
+
+
