@@ -1,0 +1,29 @@
+button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  border: none;
+  color: #2E344D;
+  font-size: 12px;
+  padding: 10px 0px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  width: 100%;
+  text-align: left;
+}
+
+button:hover {
+  color:#549790;
+}
+
+button.active {
+  background-color:white;
+  color:#549790;
+  font-weight: bold;
+}
+
+.sidebar-icon {
+  font-size: 18px;
+}

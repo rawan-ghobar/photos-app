@@ -1,0 +1,18 @@
+.upload-btn-container{
+  display: flex;
+}
+
+.upload-btn{
+  color:white;
+  background-color: #2E344D;
+  flex-direction: row;
+}
+
+input{
+  display: none;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/photos-app-client/src/renderer/src/assets/fonts/Poppins/Poppins-Medium.ttf");
+}
