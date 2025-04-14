@@ -1,0 +1,31 @@
+.rotate-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.rotate-canvas {
+  max-width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rotate-buttons {
+  margin-top: 1rem;
+}
+
+.rotate-button {
+  background-color: #4A90E2;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 0 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.rotate-button:hover {
+  background-color: #357ABD;
+}

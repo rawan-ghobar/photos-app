@@ -11,6 +11,7 @@ export default defineConfig({
   },
   renderer: {
     resolve: {
+      extensions: ['.js', '.jsx','.json'],
       alias: {
         '@renderer': resolve('src/renderer/src')
       }
