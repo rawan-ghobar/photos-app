@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Signup.css";
-import api from "../../services/api";
+import api from "../../services/Api";
 
 function Signup() {
   const [email, setEmail] = useState("");
@@ -13,9 +13,9 @@ function Signup() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await api.post("/api/register", { name, email, password });
+      const response = await api.post("/guest/signup", { name, email, password });
       if (response.data.success) {
-        navigate("/login");
+        navigate("/");
       } else {
         setError("Signup failed");
       }
@@ -51,7 +51,7 @@ function Signup() {
         />
         {error && <p className="error">{error}</p>}
         <button type="submit">Register</button>
-        <p onClick={() => navigate("/login")}>Already have an account? Login</p>
+        <p onClick={() => navigate("/")}>Already have an account? Login</p>
       </form>
     </div>
   );

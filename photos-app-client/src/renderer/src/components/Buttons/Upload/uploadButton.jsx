@@ -25,6 +25,7 @@ function UploadButton({ onUpload }) {
       </button>
 
       <input
+        className="upload-input"
         type="file"
         id="fileInput"
         accept="image/*"

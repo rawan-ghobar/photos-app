@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./Login.css";
-import api from "../../../services/Api";
+import "./login.css";
+import api from "../../services/Api";
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -45,7 +45,10 @@ function Login() {
         />
         {error && <p className="error">{error}</p>}
         <button type="submit">Login</button>
-        <p onClick={() => navigate("/signup")}>Don't have an account? Sign up</p>
+        <div className="auth-option">
+        <p>Don't have an account?</p>
+        <p onClick={() => navigate("/signup")}> Sign up</p>
+        </div>
       </form>
     </div>
   );
